@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HMSActivity">
+
+    <TextView
+        android:id="@+id/textHours1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="H"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/H1_operand"
+        app:layout_constraintEnd_toEndOf="@+id/H1_operand"
+        app:layout_constraintStart_toStartOf="@+id/H1_operand"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textMinuty1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="M"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textSekundy1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/S1_operand"
+        app:layout_constraintEnd_toEndOf="@+id/S1_operand"
+        app:layout_constraintStart_toStartOf="@+id/S1_operand"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/H1_operand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:text="0"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/M1_operand"
+        app:layout_constraintEnd_toStartOf="@+id/M1_operand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/M1_operand" />
+
+    <EditText
+        android:imeOptions="actionDone"
+        android:gravity="center"
+        android:id="@+id/M1_operand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="3"
+        android:inputType="number"
+        android:text="0"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMinuty1" />
+
+    <EditText
+        android:imeOptions="actionDone"
+        android:gravity="center"
+        android:id="@+id/S1_operand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:inputType="number"
+        android:text="0"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/M1_operand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/M1_operand"
+        app:layout_constraintTop_toTopOf="@+id/M1_operand" />
+
+    <TextView
+        android:id="@+id/textHours2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="40dp"
+        android:text="H"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/H2_operand"
+        app:layout_constraintEnd_toEndOf="@id/H2_operand"
+        app:layout_constraintStart_toStartOf="@id/H2_operand"
+        app:layout_constraintTop_toBottomOf="@+id/H1_operand" />
+
+    <TextView
+        android:id="@+id/textMinuty2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="M"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/M1_operand" />
+
+    <TextView
+        android:id="@+id/textSekundy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="40dp"
+        android:text="S"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/S2_operand"
+        app:layout_constraintEnd_toEndOf="@+id/S2_operand"
+        app:layout_constraintStart_toStartOf="@+id/S2_operand"
+        app:layout_constraintTop_toBottomOf="@+id/S1_operand" />
+
+    <EditText
+        android:imeOptions="actionDone"
+        android:gravity="center"
+        android:id="@+id/H2_operand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:inputType="number"
+        android:text="0"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/M2_operand"
+        app:layout_constraintEnd_toStartOf="@+id/M2_operand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/M2_operand" />
+
+    <EditText
+        android:id="@+id/M2_operand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="3"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:text="0"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@id/textMinuty2"
+        app:layout_constraintStart_toStartOf="@id/textMinuty2"
+        app:layout_constraintTop_toBottomOf="@+id/textMinuty2" />
+
+    <EditText
+        android:imeOptions="actionDone"
+        android:gravity="center"
+        android:id="@+id/S2_operand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:inputType="number"
+        android:text="0"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/M2_operand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/M2_operand"
+        app:layout_constraintTop_toTopOf="@+id/M2_operand" />
+
+    <Button
+        android:id="@+id/add_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="#009688"
+        android:text="+"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/M2_operand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/H2_operand" />
+
+    <Button
+        android:id="@+id/sub_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="#009688"
+        android:text="-"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/M2_operand"
+        app:layout_constraintTop_toBottomOf="@+id/S2_operand" />
+
+    <Button
+        android:id="@+id/clear_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="225dp"
+        android:layout_marginBottom="75dp"
+        android:background="#009688"
+        android:text="AC"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sub_time"
+        app:layout_constraintStart_toStartOf="@+id/add_time"
+        app:layout_constraintTop_toBottomOf="@+id/M2_operand" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
